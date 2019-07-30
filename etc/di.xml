@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ecomteck
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the ecomteck.com license that is
+ * available through the world-wide-web at this URL:
+ * https://ecomteck.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ecomteck
+ * @package     Ecomteck_Pdfgenerator
+ * @copyright   Copyright (c) 2019 Ecomteck (https://ecomteck.com/)
+ * @license     https://ecomteck.com/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Ecomteck\Pdfgenerator\Api\Data\TemplatesInterface"
+                type="Ecomteck\Pdfgenerator\Model\Pdfgenerator" />
+    <preference for="Ecomteck\Pdfgenerator\Api\TemplatesRepositoryInterface"
+                type="Ecomteck\Pdfgenerator\Model\PdfgeneratorRepository" />
+    <preference for="\Magento\Framework\Mail\Template\TransportBuilder"
+                type="Ecomteck\Pdfgenerator\Model\Email\TransportBuilder"/>
+    <preference for="\Magento\Sales\Model\Order\Email\SenderBuilder"
+                type="Ecomteck\Pdfgenerator\Model\Email\SenderBuilder"/>
+    <preference for="Magento\Framework\Mail\Message"
+                type="Ecomteck\Pdfgenerator\Model\Email\Message"/>
+
+
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="ecomteck_pdf_templates_data_source" xsi:type="string">Ecomteck\Pdfgenerator\Model\ResourceModel\Pdfgenerator\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Ecomteck\Pdfgenerator\Model\ResourceModel\Pdfgenerator\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">ecomteck_pdf_templates</argument>
+            <argument name="eventPrefix" xsi:type="string">ecomteck_pdf_templates_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">templates_grid_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Ecomteck\Pdfgenerator\Model\ResourceModel\Pdfgenerator</argument>
+        </arguments>
+    </type>
+
+    <virtualType name="TemplatesGridDataProvider" type="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider">
+        <arguments>
+            <argument name="collection" xsi:type="object" shared="false">Ecomteck\Pdfgenerator\Model\Resource\Pdfgenerator\Grid\Collection</argument>
+            <argument name="filterPool" xsi:type="object" shared="false">TemplatesGirdFilterPool</argument>
+        </arguments>
+    </virtualType>
+</config>

@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="pdf_invoice_frontend" frontName="pdf_invoice_frontend">
+            <module name="Ecomteck_Pdfgenerator" />
+        </route>
+    </router>
+</config>

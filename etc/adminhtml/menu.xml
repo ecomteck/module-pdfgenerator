@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Ecomteck
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the ecomteck.com license that is
+ * available through the world-wide-web at this URL:
+ * https://ecomteck.com/LICENSE.txt
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ *
+ * @category    Ecomteck
+ * @package     Ecomteck_Pdfgenerator
+ * @copyright   Copyright (c) 2019 Ecomteck (https://ecomteck.com/)
+ * @license     https://ecomteck.com/LICENSE.txt
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+    	<add id="Ecomteck_Pdfgenerator::templates" title="PDF Generator" module="Ecomteck_Pdfgenerator" sortOrder="10" resource="Ecomteck_Pdfgenerator::templates" parent="Ecomteck_Core::menu"/>
+        <add id="Ecomteck_Pdfgenerator::template_list" title="Manage PDF Templates" module="Ecomteck_Pdfgenerator" sortOrder="10" parent="Ecomteck_Pdfgenerator::templates" action="pdfgenerator/templates" resource="Ecomteck_Pdfgenerator::templates"/>
+    </menu>
+</config>
