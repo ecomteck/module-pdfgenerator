@@ -1,0 +1,41 @@
+{
+  "name": "ecomteck/module-pdfgenerator",
+  "description": "The best pdf generator for Magento. Ecomteck PDF Generator",
+  "type": "magento2-module",
+  "version": "1.0.0",
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Ecomteck\\Pdfgenerator\\": ""
+    }
+  },
+  "keywords": [
+      "ecomteck",
+      "Invoice PDF",
+      "pdf generator",
+      "magento 2 pdf generator",
+      "frontend generate pdf",
+      "pdf template"
+  ],
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "authors": [
+    {
+      "name": "Ecomteck",
+      "email": "ecomteck@gmail.com",
+      "homepage": "https://www.ecomteck.com/",
+      "role": "Magento 2 Extensions Provider"
+    }
+  ],
+  "require": {
+    "ecomteck/module-core" : "1.*",
+    "mpdf/mpdf": "7.1.*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
+
