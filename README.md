@@ -30,7 +30,7 @@ Add a new template from the "Add new template" button. This will prompt you with
 Run the following command in Magento 2 root folder:
 
 ```
-composer require ecomteck/module-delivery-date
+composer require ecomteck/module-pdfgenerator
 php bin/magento setup:upgrade
 php bin/magento setup:static-content:deploy -f
 php bin/magento cache:clean
