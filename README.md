@@ -36,6 +36,23 @@ php bin/magento setup:static-content:deploy -f
 php bin/magento cache:clean
 ```
 
+## 4. TO DO
+
+### Short Term
+- Fix bugs variables on backend
+- Style sample PDF Template
+- Support frontend generate PDF invoice file
+
+### Long Term
+- Support Ecomteck Order Comment Data
+- Support Ecomteck Custom Order Attribute Data
+- PRINT IN MASS - Both store admins and customers are able to print all documents by one single click.
+- Setup paper sizes in configuration easily, support Letter, A4, A5, etc.
+- Create 12 premade templates to be used with the highest applicability (on commerce version).
+- Using barcode / QR code for Order, Invoice, Shipment number. (on commerce version)
+- Add more variables for PDF Template (on commerce version)
+- Barcode (EAN13, UPC etc) for product items. (on commerce version)
+
 ## Conclusion
 
 The extension will allow you to harness all the power of the email template system and more. You can add phtml files to your template for very advanced configurations ({Error in template processing} and {Error in template processing}).  You can add your own item processing layout so you can output taxes item prices as you want ({{layout area="frontend" handle="sales_email_order_invoice_items" invoice=$invoice order=$order}}).
