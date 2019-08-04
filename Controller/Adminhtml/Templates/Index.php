@@ -57,7 +57,7 @@ class Index extends Templates
     {
         /** @var \Magento\Backend\Model\View\Result\Page $resultPage */
         $resultPage = $this->resultPageFactory->create();
-        $this->initPage($resultPage)->getConfig()->getTitle()->prepend(__('ecomteck PDF Generator Templates'));
+        $this->initPage($resultPage)->getConfig()->getTitle()->prepend(__('Ecomteck PDF Generator Templates'));
         return $resultPage;
     }
 }

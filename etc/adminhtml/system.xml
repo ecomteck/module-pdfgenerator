@@ -22,12 +22,9 @@
 -->
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
     <system>
-        <tab id="ecomteck_extensions" translate="label" sortOrder="1">
-            <label>ecomteck Settings</label>
-        </tab>
         <section id="ecomteck_pdfgenerator" translate="label" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
             <label>Invoice PDF Generator</label>
-            <tab>ecomteck_extensions</tab>
+            <tab>ecomteck</tab>
             <resource>Ecomteck_Pdfgenerator::config_system</resource>
             <group id="general" translate="label" type="text" sortOrder="2" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>

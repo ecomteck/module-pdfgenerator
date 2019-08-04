@@ -59,7 +59,7 @@ abstract class Templates extends Action
     public function initPage($resultPage)
     {
         $resultPage->setActiveMenu('Ecomteck_Pdfgenerator::template_list')
-            ->addBreadcrumb(__('ecomteck PDF Generator Templates'), __('ecomteck PDF Generator Templates'));
+            ->addBreadcrumb(__('Ecomteck PDF Generator Templates'), __('Ecomteck PDF Generator Templates'));
 
         return $resultPage;
     }
