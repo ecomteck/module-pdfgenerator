@@ -49,4 +49,10 @@ interface TemplatesRepositoryInterface
      * @return mixed
      */
     public function deleteById($value);
+
+    /**
+     * @param $type the template type
+     * @return mixed
+     */
+    public function getDefaultTemplateItem($type = \Ecomteck\Pdfgenerator\Model\Source\TemplateType::TYPE_INVOICE);
 }

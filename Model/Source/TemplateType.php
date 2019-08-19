@@ -48,6 +48,11 @@ class TemplateType extends AbstractSource
      * Types
      */
     const TYPE_INVOICE = 1;
+    const TYPE_ORDER = 2;
+    const TYPE_SHIPMENT = 3;
+    const TYPE_CATEGORY = 4;
+    const TYPE_PRODUCT= 5;
+    const TYPE_CMS= 6;
 
     /**
      * Prepare post's statuses.
@@ -56,6 +61,13 @@ class TemplateType extends AbstractSource
      */
     public function getAvailable()
     {
-        return [self::TYPE_INVOICE => __('Invoice')];
+        return [
+                self::TYPE_INVOICE => __('Invoice'),
+                self::TYPE_ORDER => __('Order'),
+                self::TYPE_SHIPMENT => __('Shipment'),
+                self::TYPE_CATEGORY => __('Catalog Category'),
+                self::TYPE_PRODUCT => __('Catalog Product'),
+                self::TYPE_CMS => __('CMS Page')
+                ];
     }
 }

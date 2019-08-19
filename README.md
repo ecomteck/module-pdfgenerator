@@ -39,15 +39,22 @@ php bin/magento cache:clean
 ## 4. TO DO
 
 ### Short Term
-- Fix bugs variables on backend
-- Style sample PDF Template
-- Support frontend generate PDF invoice file
+- Fix bugs variables on backend (doing)
+- Style sample PDF Template (doing)
+- Support frontend generate PDF invoice file (doing)
+- Support frontend generate PDF order file (doing)
+- Support frontend generate PDF shipment file (doing)
+- Support frontend generate PDF cms page file (doing)
+- Support frontend generate PDF catalog product file (doing)
+- Support frontend generate PDF catalog category file (doing)
+- Support backend generate PDF shipment file (doing)
+- Support backend generate PDF order file (doing)
 
 ### Long Term
 - Support Ecomteck Order Comment Data
 - Support Ecomteck Custom Order Attribute Data
 - PRINT IN MASS - Both store admins and customers are able to print all documents by one single click.
-- Setup paper sizes in configuration easily, support Letter, A4, A5, etc.
+- Setup paper sizes in configuration easily, support Letter, A4, A5, etc. (resolved)
 - Create 12 premade templates to be used with the highest applicability (on commerce version).
 - Using barcode / QR code for Order, Invoice, Shipment number. (on commerce version)
 - Add more variables for PDF Template (on commerce version)

@@ -133,4 +133,19 @@ class PdfgeneratorRepository implements TemplatesRepositoryInterface
         $template = $this->getById($templateId);
         return $this->delete($template);
     }
+
+    /**
+     * @param $type the template type
+     * @return mixed
+     */
+    public function getDefaultTemplateItem($type = \Ecomteck\Pdfgenerator\Model\Source\TemplateType::TYPE_INVOICE){
+        $templateModel = $this->pdfgeneratorFactory->create();
+        $collection = $templateModel->getCollection();
+        $collection->addFieldToFilter('template_type', $type)
+                    ->addFieldtoFilter('template_default', 1);
+        if ($collection->getSize()) {
+            return $collection->getFirstItem();
+        }
+        return false;
+    }
 }

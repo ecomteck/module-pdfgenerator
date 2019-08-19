@@ -26,6 +26,14 @@
             <general>
                 <enable_frontend>1</enable_frontend>
             </general>
+            <pdf_settings>
+                <enabled_pdf_invoice>1</enabled_pdf_invoice>
+                <enabled_pdf_order>1</enabled_pdf_order>
+                <enabled_pdf_shipment>1</enabled_pdf_shipment>
+                <enabled_pdf_category>0</enabled_pdf_category>
+                <enabled_pdf_product>0</enabled_pdf_product>
+                <enabled_pdf_cms>0</enabled_pdf_cms>
+            </pdf_settings>
         </pdfgenerator>
     </default>
 </config>

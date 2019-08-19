@@ -39,6 +39,39 @@
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
             </group>
+            <group id="pdf_settings" translate="label" type="text" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Pdf Settings</label>
+                <field id="enabled_pdf_invoice" translate="label comment" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate Invoice Pdf</label>
+                    <comment>Enables or disables generate invoice to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled_pdf_order" translate="label comment" type="select" sortOrder="5" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate Order Pdf</label>
+                    <comment>Enables or disables generate order to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled_pdf_shipment" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate Shipment Pdf</label>
+                    <comment>Enables or disables generate shipment to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled_pdf_category" translate="label comment" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate Catalog Category Pdf</label>
+                    <comment>Enables or disables generate catalog category page content to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled_pdf_product" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate Catalog Product Pdf</label>
+                    <comment>Enables or disables generate catalog product page content to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="enabled_pdf_cms" translate="label comment" type="select" sortOrder="25" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Enabled Generate CMS Page Pdf</label>
+                    <comment>Enables or disables generate CMS page content to PDF. If this is set to yes and you get the default template from Magento then you did something wrong.</comment>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+            </group>
         </section>
     </system>
 </config>
