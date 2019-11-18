@@ -33,4 +33,9 @@
                 sortOrder="10"
                 disabled="false"/>
     </type>
+    <type name="Magento\Sales\Controller\Adminhtml\Invoice\Pdfinvoices">
+        <plugin name="change_print_pdf_invoices_controller" 
+                type="Ecomteck\Pdfgenerator\Plugin\Magento\Sales\Controller\Adminhtml\Invoice\Pdfinvoices" 
+                sortOrder="1" />
+    </type>
 </config>

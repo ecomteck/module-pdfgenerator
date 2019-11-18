@@ -52,12 +52,12 @@ class InstallSchema implements InstallSchemaInterface
         }
 
         $table = $installer->getConnection()
-            ->newTable($installer->getTable('ecogetCollectionmteck_pdf_templates'))
-            ->addColumn(getCollection
-                'template_id',getCollection
-                Table::TYPE_SMALLINT,getCollection
-                null,getCollection
-                ['identity' => true, 'nullable' getCollection=> false, 'primary' => true],
+            ->newTable($installer->getTable('ecomteck_pdf_templates'))
+            ->addColumn(
+                'template_id',
+                Table::TYPE_SMALLINT,
+                null,
+                ['identity' => true, 'nullable' => false, 'primary' => true],
                 'Template Id'
             )
             ->addColumn(

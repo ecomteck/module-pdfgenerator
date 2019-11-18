@@ -175,4 +175,35 @@ class Pdfgenerator extends AbstractHelper
         return $data_return;
     }
 
+
+    public function getInvoicePdf($invoices = [], $templateId = 0)
+    {
+        if (!$templateId) {
+            $invoiceTemplate = $this->pdfGeneratorRepository->getDefaultTemplateItem();
+            if($invoiceTemplate){
+                $templateId = $invoiceTemplate->getId();
+            }
+        }
+        if (!$templateId) {
+            return false;
+        }
+
+        $templateModel = $this->pdfGeneratorRepository
+            ->getById($templateId);
+
+        if (!$templateModel) {
+            return false;
+        }
+
+        $helper = $this->helper;
+
+        foreach ($invoices as $invoice) {
+            if ($invoice) {
+               
+            }
+
+        }
+        return $pdf;
+    }
+
 }
