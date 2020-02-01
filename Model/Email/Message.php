@@ -17,15 +17,15 @@ use Zend\Mime\Part;
 class Message extends \Magento\Framework\Mail\Message implements MailMessageInterface
 {
 
-    private $partFactory;
+    protected $partFactory;
 
-    private $mimeMessageFactory;
+    protected $mimeMessageFactory;
 
-    private $zendMessage;
+    protected $zendMessage;
 
-    private $attachment;
+    protected $attachment;
 
-    private $messageType = self::TYPE_TEXT;
+    protected $messageType = self::TYPE_TEXT;
 
     public function __construct(
         PartFactory $partFactory,
